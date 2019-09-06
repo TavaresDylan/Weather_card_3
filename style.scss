@@ -1,0 +1,147 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    margin: 0 0;
+    padding: 0 0;
+}
+@font-face{
+    font-family: "Bebas-Neue-Bold";
+    src: url(Bebas/BebasNeue-Bold.ttf);
+}
+@font-face{
+    font-family: "Bebas-Neue-Light";
+    src: url(Bebas/BebasNeue-Light.otf);
+}
+@font-face{
+    font-family: "Bebas-Neue-Book";
+    src: url(Bebas/BebasNeue-Book.otf);
+}
+body{
+    background: orange;
+    margin: 0 auto;
+    li{
+        list-style:none;
+    }
+    .container{
+        padding: 5% 0;
+        font-family: 'sans-serif';
+        margin: 0 auto;
+        width: 30%;
+        //border:2px solid black;
+        .city{
+            //border: 2px solid green;
+            background:#1F5C8B;
+            padding: 0 15px;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                /*li{
+                    display: flex;
+                    align-items: center;
+                }*/
+                .current-city-name{
+                    color: white;
+                    padding: 3% 0;
+                    //border: 2px solid maroon;
+                    font-family: "Bebas-Neue-Bold";
+                    font-size: 3em;
+                }
+                .current-date{
+                    color: white;
+                    margin-right: 7%;
+                    //border: 2px solid white;
+                    display: flex;
+                    align-items: center;
+                    font-family: "Bebas-Neue-Light";
+                    font-size: 2em;
+                }
+            }
+        }
+        .current-temp{
+            //border: 2px solid blue;
+            background: #134575;
+            display: flex;
+            justify-content: space-around;
+            padding: 4% 0;
+            .current-infos{
+                color: white;
+                //border: 2px solid yellow;
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    li{
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+                .day{
+                    font-family: "Bebas-Neue-Book";
+                    font-size: 3.2em;
+                }
+                .humidity{
+                    font-family: "Bebas-Neue-Light";
+                    font-size: 1.8em;
+                }
+                .min-max{
+                    font-family: "Bebas-Neue-Book";
+                    font-size: 1.6em;
+                }
+                .today-temp{
+                    margin-top: 10px;
+                    font-family: "Bebas-Neue-Bold";
+                    font-size: 5.2em;
+                }
+            }
+            .current-icon{
+                //border: 2px solid black;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    .status{
+                        margin-top: 15px;
+                        font-family: "Bebas-Neue-Light";
+                        font-size: 2.2em;
+                    }
+                    li{
+                        color: #ffffff;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+    .previsions{
+        background: linear-gradient(#1A4F79,#3979B6);
+        //border: 2px solid white;
+        ul{
+            font-family: "Bebas-Neue-Book";
+            display: flex;
+            justify-content: space-between;
+            //border: 2px solid green;
+            padding: 2% 5% 0 6%;
+            .prev-icon{
+                font-size: 3em;
+            }
+            .weekdays{
+                width: 40%;
+                font-size: 3.2em;
+            }
+            .weekdeg{
+                font-size: 3.6em;
+                display: flex;
+                justify-items: center;
+            }
+            li{
+                display: flex;
+                //border: 2px solid black;
+                color: white;
+                
+            }
+        }
+    }
+}

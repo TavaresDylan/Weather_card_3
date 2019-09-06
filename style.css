@@ -1,0 +1,109 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0 0;
+  padding: 0 0; }
+
+@font-face {
+  font-family: "Bebas-Neue-Bold";
+  src: url(Bebas/BebasNeue-Bold.ttf); }
+@font-face {
+  font-family: "Bebas-Neue-Light";
+  src: url(Bebas/BebasNeue-Light.otf); }
+@font-face {
+  font-family: "Bebas-Neue-Book";
+  src: url(Bebas/BebasNeue-Book.otf); }
+body {
+  background: orange;
+  margin: 0 auto; }
+  body li {
+    list-style: none; }
+  body .container {
+    padding: 5% 0;
+    font-family: 'sans-serif';
+    margin: 0 auto;
+    width: 30%; }
+    body .container .city {
+      background: #1F5C8B;
+      padding: 0 15px; }
+      body .container .city ul {
+        display: flex;
+        justify-content: space-between;
+        /*li{
+            display: flex;
+            align-items: center;
+        }*/ }
+        body .container .city ul .current-city-name {
+          color: white;
+          padding: 3% 0;
+          font-family: "Bebas-Neue-Bold";
+          font-size: 3em; }
+        body .container .city ul .current-date {
+          color: white;
+          margin-right: 7%;
+          display: flex;
+          align-items: center;
+          font-family: "Bebas-Neue-Light";
+          font-size: 2em; }
+    body .container .current-temp {
+      background: #134575;
+      display: flex;
+      justify-content: space-around;
+      padding: 4% 0; }
+      body .container .current-temp .current-infos {
+        color: white;
+        display: flex;
+        align-items: center;
+        margin-top: 10px; }
+        body .container .current-temp .current-infos ul {
+          display: flex;
+          flex-direction: column; }
+          body .container .current-temp .current-infos ul li {
+            display: flex;
+            justify-content: center; }
+        body .container .current-temp .current-infos .day {
+          font-family: "Bebas-Neue-Book";
+          font-size: 3.2em; }
+        body .container .current-temp .current-infos .humidity {
+          font-family: "Bebas-Neue-Light";
+          font-size: 1.8em; }
+        body .container .current-temp .current-infos .min-max {
+          font-family: "Bebas-Neue-Book";
+          font-size: 1.6em; }
+        body .container .current-temp .current-infos .today-temp {
+          margin-top: 10px;
+          font-family: "Bebas-Neue-Bold";
+          font-size: 5.2em; }
+      body .container .current-temp .current-icon ul {
+        display: flex;
+        flex-direction: column; }
+        body .container .current-temp .current-icon ul .status {
+          margin-top: 15px;
+          font-family: "Bebas-Neue-Light";
+          font-size: 2.2em; }
+        body .container .current-temp .current-icon ul li {
+          color: #ffffff;
+          display: flex;
+          justify-content: center; }
+  body .previsions {
+    background: linear-gradient(#1A4F79, #3979B6); }
+    body .previsions ul {
+      font-family: "Bebas-Neue-Book";
+      display: flex;
+      justify-content: space-between;
+      padding: 2% 5% 0 6%; }
+      body .previsions ul .prev-icon {
+        font-size: 3em; }
+      body .previsions ul .weekdays {
+        width: 40%;
+        font-size: 3.2em; }
+      body .previsions ul .weekdeg {
+        font-size: 3.6em;
+        display: flex;
+        justify-items: center; }
+      body .previsions ul li {
+        display: flex;
+        color: white; }
+
+/*# sourceMappingURL=style.css.map */
